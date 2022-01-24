@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Cunning_Linguist</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Ledger Openmoji.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ledger Openmoji.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Ledger Openmoji.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Ledger Openmoji.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="wordlist.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
